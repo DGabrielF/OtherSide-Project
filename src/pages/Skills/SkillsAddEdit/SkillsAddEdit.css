@@ -1,5 +1,6 @@
 section.skill-add-edit {
     width: 98vw;
+    height: 98vh;
     margin: auto;
     padding: 4px;
 
@@ -7,12 +8,20 @@ section.skill-add-edit {
 
     background-color: var(--background-color);
     border-radius: var(--border-radius);
+    border: var(--border);
+    box-shadow: var(--border);
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 section.skill-add-edit.hide {
@@ -28,30 +37,49 @@ section.skill-add-edit > div {
     padding: 4px 0;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 4px;
 }
 section.skill-add-edit > div > * {
     width: 98%;
 }
 
-section.skill-add-edit .options,
+section.skill-add-edit .options {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
 section.skill-add-edit .basic {
+    width: 48%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
-section.skill-add-edit .options input,
+section.skill-add-edit .options input {
+    width: calc(100% - 130px);
+}
 section.skill-add-edit .basic input {
     width: calc(100% - 130px);
+    max-width: 200px;
+}
+
+section.skill-add-edit .basic input[type="file"] {
+    width: auto;
+    max-width: none;
 }
 
 section.skill-add-edit textarea {
     width: calc(100% - 130px);
-    max-width: calc(100% - 130px);
+    max-width: 200px;
     min-width: calc(100% - 130px);
     max-height: 50px;
     min-height: 15px;
@@ -90,6 +118,9 @@ section.skill-add-edit input.number{
 }
 
 section.skill-add-edit .empty {
+    width: 30%;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,6 +137,26 @@ section.skill-add-edit .empty > [class$="-inputs"] {
 section.skill-add-edit .empty > [class$="-inputs"] input {
     width: 100%;
 }
+section.skill-add-edit .empty-input > button,
+section.skill-add-edit .empty > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+section.skill-add-edit .empty-input {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 section.skill-add-edit .empty-input  > [class$="-inputs"] {
     display: flex;
     flex-direction: row;
@@ -120,24 +171,7 @@ section.skill-add-edit .empty-input  > [class$="-inputs"] input {
 section.skill-add-edit .empty-input  > [class$="-inputs"] input.number {
     width: 60px;
 }
-section.skill-add-edit .empty-input > button,
-section.skill-add-edit .empty > button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin: 4px;
-}
-
-section.skill-add-edit .empty-input {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 section.skill-add-edit .button-area {
     width: 100%;
 

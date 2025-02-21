@@ -1,9 +1,9 @@
 export const SkillAddEdit = {
     self: null,
     entries: [],
-    create: () => {},
     show: () => {},
     hide: () => {},
+    create: () => {},
 };
 
 SkillAddEdit.entries = [
@@ -182,6 +182,7 @@ function addEntry(event) {
         }
     }
 }
+
 function addEntryInput(event) {
     const target = event.target;
     const parent = target.parentNode;
