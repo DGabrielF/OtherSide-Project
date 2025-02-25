@@ -1,0 +1,33 @@
+button {
+    padding: 4px 2px;
+
+    color: var(--font-color);
+    background-color: transparent;
+    text-transform: uppercase;
+
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+button.agree {
+    color: #fff;
+    background-color: var(--agree-color);
+}
+button.agree:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    background-color: var(--agree-hover-color);
+}
+
+button.deny {
+    color: #fff;
+    background-color: var(--deny-color);
+}
+button.deny:hover {
+    color: var(--font-color);
+    font-weight: bold;
+    background-color: var(--deny-hover-color);
+}

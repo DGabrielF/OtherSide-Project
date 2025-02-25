@@ -1,0 +1,17 @@
+section#skills-page {
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section#skills-page .detail-tree {
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

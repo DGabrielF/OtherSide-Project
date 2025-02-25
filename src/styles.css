@@ -1,0 +1,35 @@
+@import url('./components/ProgressBar/ProgressBar.css');
+
+@import url('./pages/Skills/Skills.css');
+@import url('./pages/Skills/SkillsAddEdit/SkillsAddEdit.css');
+@import url('./pages/Skills/SkillsList/SkillsList.css');
+@import url('./pages/Skills/SkillsItem/SkillsItem.css');
+@import url('./pages/Skills/SkillDetail/SkillDetail.css');
+
+@import url('./styles/buttons.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    background-color: var(--background-dark-color);
+    color: var(--font-color);
+}
+
+:root {
+    --font-color: #17e0e0;
+    --background-color: #122222;
+    --background-dark-color: #021212;
+    --deny-color: #aa5050;
+    --deny-hover-color: #ee5050;
+    --agree-color: #5050aa;
+    --agree-hover-color: #5050ee;
+
+    --border-radius: 5px;
+    --border-radius-large: 10px;
+    --border: 2px solid #0005;
+}
