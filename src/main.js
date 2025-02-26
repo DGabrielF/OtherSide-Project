@@ -1,4 +1,5 @@
-import { Skills } from "./pages/Skills/Skills.js";
+import { Attributes } from "./pages/Attributes/Attributes.js";
+import { PlayerTeste } from "./schemas/Player.js";
 
 const body = document.querySelector("body");
 
@@ -10,6 +11,7 @@ init();
 
 function loading() {
   const loadMessage = document.createElement("span");
-  
-  body.appendChild(Skills.create());
+  const player = PlayerTeste;
+  body.appendChild(Attributes.create(player.attributes));
+  //body.appendChild(Skills.create());
 }

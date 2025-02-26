@@ -1,0 +1,34 @@
+div.attribute-menu {
+  width: 178px;
+  height: 100vh;
+  padding: 4px 0;
+
+  background-color: var(--background-color);
+  border-right: var(--border);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.attribute-menu > div {
+  padding: 4px;
+  margin: 2px 0;
+  width: 95%;
+
+  text-transform: uppercase;
+  box-shadow: 0 0 3px #000;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+div.attribute-menu > div:hover {
+  background-color: #000a;
+  transition: all 0.2s ease-in;
+}

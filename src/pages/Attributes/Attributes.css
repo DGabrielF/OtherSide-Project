@@ -1,0 +1,4 @@
+section#attributes-page {
+  display: flex;
+  flex-direction: row;
+}

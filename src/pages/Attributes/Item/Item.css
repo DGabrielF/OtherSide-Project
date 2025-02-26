@@ -1,0 +1,36 @@
+div.attribute-item {
+  padding: 2px 8px;
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.attribute-item .name{
+  width: 100px;
+}
+
+div.attribute-item .progress_container{
+  width: 45%;
+  height: 15px;
+
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+div.attribute-item .progress_container span.label {
+  /* Inentificadores de área */
+  border: none;
+  background-color: transparent
+}
+
+.progress_bar {
+  height: 30px;
+  /* Inentificadores de área */
+  border: 1px solid #000a;
+  background-color: #000a;
+  transition: width 0.1s ease;
+}

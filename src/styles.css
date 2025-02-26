@@ -1,5 +1,10 @@
 @import url('./components/ProgressBar/ProgressBar.css');
 
+@import url('./pages/Attributes/Attributes.css');
+@import url('./pages/Attributes/Content/Content.css');
+@import url('./pages/Attributes/Item/Item.css');
+@import url('./pages/Attributes/List/List.css');
+
 @import url('./pages/Skills/Skills.css');
 @import url('./pages/Skills/SkillsAddEdit/SkillsAddEdit.css');
 @import url('./pages/Skills/SkillsList/SkillsList.css');

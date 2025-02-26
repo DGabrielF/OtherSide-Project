@@ -86,7 +86,6 @@ SkillDetail.update = (skill) => {
   SkillDetail.views.stamina.textContent = SKILL.cost.stamina;
   SkillDetail.views.soul.textContent = SKILL.cost.soul;
   SkillDetail.views.health.textContent = SKILL.cost.health;
-  console.log(SkillDetail)
 }
 
 SkillDetail.create = () => {
@@ -156,59 +155,99 @@ SkillDetail.create = () => {
   SkillDetail.views.description.classList.add("description");
   SkillDetail.self.appendChild(SkillDetail.views.description);
 
+  const baseSpan = document.createElement("span");
+  baseSpan.textContent = "Atributos Base";
+  SkillDetail.self.appendChild(baseSpan);
+
   const base = document.createElement("div");
   SkillDetail.self.appendChild(base);
 
-  const offensiveSpan = document.createElement("span");
-  offensiveSpan.textContent = "ataque";
-  base.appendChild(offensiveSpan);
+  const offensiveDiv = document.createElement("div");
+  const offensiveSpan = document.createElement("img");
+  offensiveSpan.classList.add("icon");
+  offensiveSpan.classList.add("health");
+  offensiveSpan.src = "src/assets/icons/sword.svg";
+  offensiveDiv.appendChild(offensiveSpan);
   SkillDetail.views.offensive = document.createElement("span");
-  base.appendChild(SkillDetail.views.offensive);
+  offensiveDiv.appendChild(SkillDetail.views.offensive);
+  base.appendChild(offensiveDiv);
 
-  const defensiveSpan = document.createElement("span");
-  defensiveSpan.textContent = "defesa";
-  base.appendChild(defensiveSpan);
+  const defensiveDiv = document.createElement("div");
+  const defensiveSpan = document.createElement("img");
+  defensiveSpan.classList.add("icon");
+  defensiveSpan.classList.add("health");
+  defensiveSpan.src = "src/assets/icons/shield.svg";
+  defensiveDiv.appendChild(defensiveSpan);
   SkillDetail.views.defensive = document.createElement("span");
-  base.appendChild(SkillDetail.views.defensive);
+  defensiveDiv.appendChild(SkillDetail.views.defensive);
+  base.appendChild(defensiveDiv);
 
-  const cooldownSpan = document.createElement("span");
-  cooldownSpan.textContent = "resfriamento";
-  base.appendChild(cooldownSpan);
+  const cooldownDiv = document.createElement("div");
+  const cooldownSpan = document.createElement("img");
+  cooldownSpan.classList.add("icon");
+  cooldownSpan.classList.add("health");
+  cooldownSpan.src = "src/assets/icons/clock.svg";
+  cooldownDiv.appendChild(cooldownSpan);
   SkillDetail.views.cooldown = document.createElement("span");
-  base.appendChild(SkillDetail.views.cooldown);
+  cooldownDiv.appendChild(SkillDetail.views.cooldown);
+  base.appendChild(cooldownDiv);
 
-  const experienceSpan = document.createElement("span");
-  experienceSpan.textContent = "resfriamento";
-  base.appendChild(experienceSpan);
+  const experienceDiv = document.createElement("div");
+  const experienceSpan = document.createElement("img");
+  experienceSpan.classList.add("icon");
+  experienceSpan.classList.add("health");
+  experienceSpan.src = "src/assets/icons/exp.svg";
+  experienceDiv.appendChild(experienceSpan);
   SkillDetail.views.experience = document.createElement("span");
-  base.appendChild(SkillDetail.views.experience);
+  experienceDiv.appendChild(SkillDetail.views.experience);
+  base.appendChild(experienceDiv);
   
+  const costSpan = document.createElement("span");
+  costSpan.textContent = "Custo de Execução";
+  SkillDetail.self.appendChild(costSpan);
+
   const cost = document.createElement("div");
   SkillDetail.self.appendChild(cost);
 
-  const manaSpan = document.createElement("span");
-  manaSpan.textContent = "mana";
-  cost.appendChild(manaSpan);
+  const manaDiv = document.createElement("div");
+  const manaSpan = document.createElement("img");
+  manaSpan.classList.add("icon");
+  manaSpan.classList.add("health");
+  manaSpan.src = "src/assets/icons/mana-1.jpg";
+  manaDiv.appendChild(manaSpan);
   SkillDetail.views.mana = document.createElement("span");
-  cost.appendChild(SkillDetail.views.mana);
+  manaDiv.appendChild(SkillDetail.views.mana);
+  cost.appendChild(manaDiv);
 
-  const staminaSpan = document.createElement("span");
-  staminaSpan.textContent = "estamina";
-  cost.appendChild(staminaSpan);
+  const staminaDiv = document.createElement("div");
+  const staminaSpan = document.createElement("img");
+  staminaSpan.classList.add("icon");
+  staminaSpan.classList.add("health");
+  staminaSpan.src = "src/assets/icons/stamina-2.jpg";
+  staminaDiv.appendChild(staminaSpan);
   SkillDetail.views.stamina = document.createElement("span");
-  cost.appendChild(SkillDetail.views.stamina);
+  staminaDiv.appendChild(SkillDetail.views.stamina);
+  cost.appendChild(staminaDiv);
 
-  const soulSpan = document.createElement("span");
-  soulSpan.textContent = "espirito";
-  cost.appendChild(soulSpan);
+  const soulDiv = document.createElement("div");
+  const soulSpan = document.createElement("img");
+  soulSpan.classList.add("icon");
+  soulSpan.classList.add("health");
+  soulSpan.src = "src/assets/icons/soul-2.jpg";
+  soulDiv.appendChild(soulSpan);
   SkillDetail.views.soul = document.createElement("span");
-  cost.appendChild(SkillDetail.views.soul);
+  soulDiv.appendChild(SkillDetail.views.soul);
+  cost.appendChild(soulDiv);
 
-  const healthSpan = document.createElement("span");
-  healthSpan.textContent = "saúde";
-  cost.appendChild(healthSpan);
+  const healthDiv = document.createElement("div");
+  const healthSpan = document.createElement("img");
+  healthSpan.classList.add("icon");
+  healthSpan.classList.add("health");
+  healthSpan.src = "src/assets/icons/health-1.jpg";
+  healthDiv.appendChild(healthSpan);
   SkillDetail.views.health = document.createElement("span");
-  cost.appendChild(SkillDetail.views.health);
+  healthDiv.appendChild(SkillDetail.views.health);
+  cost.appendChild(healthDiv);
 
   SkillDetail.update();
 
