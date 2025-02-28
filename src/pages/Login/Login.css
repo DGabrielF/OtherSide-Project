@@ -1,0 +1,52 @@
+div#login-box {
+  padding: 12px 8px;
+  width: 50%;
+
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 0 8px #000;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+div#login-box.hide {
+  display: none
+}
+
+div#login-box h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div#login-box input{
+  margin: 4px 0;
+  width: 100%;
+
+}
+
+div#login-box div.password{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4px;
+}
+
+div#login-box .button-area{
+  width: 100%;
+  margin-top: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+div#login-box .button-area > * {
+  width: 100%;
+}
