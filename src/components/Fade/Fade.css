@@ -1,0 +1,13 @@
+div.fade {
+  width: "100vw";
+  height: "100vh";
+  background-color: "#00000022";
+  position: "relative";
+  top: "0";
+  right: "0";
+  z-index: "1";
+}
+
+div.fade.hide {
+display: none;
+}

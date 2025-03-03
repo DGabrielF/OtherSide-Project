@@ -1,5 +1,6 @@
 import { Fade } from "./components/Fade/Fade.js";
 import { Login } from "./pages/Login/Login.js";
+import { Main } from "./pages/Main/Main.js";
 import { Opening } from "./pages/Opening/Opening.js";
 import { Register } from "./pages/Register/Register.js";
 import { PlayerTeste } from "./schemas/Player.js";
@@ -16,20 +17,25 @@ function loading() {
   const opening = Opening.create();
   body.appendChild(opening);
 
-  Opening.update({ message: "Carregando dados de componentes: Fade.", value: 1, maxValue: 3 });
+  Opening.update({ message: "Carregando dados de componentes: Fade.", value: 1, maxValue: 5 });
   const fade = Fade.create();
   body.appendChild(fade);
 
-  Opening.update({ message: "Carregando dados conponentes da página de login.", value: 2, maxValue: 3 });
+  Opening.update({ message: "Carregando dados conponentes da página de login.", value: 2, maxValue: 5 });
   const loginBox = Login.create();
   body.appendChild(loginBox);
   
-  Opening.update({ message: "Carregando dados conponentes da página de registro.", value: 3, maxValue: 3 });
+  Opening.update({ message: "Carregando dados conponentes da página de registro.", value: 3, maxValue: 5 });
   const registerBox = Register.create();
   body.appendChild(registerBox);
+  
+  Opening.update({ message: "Carregando dados conponentes da página principal.", value: 3, maxValue: 5 });
+  const main = Main.create();
+  body.appendChild(main);
 
   Opening.hide();
-  Login.show();
+  // Login.show();
+  Main.show()
 
 
   const loadMessage = document.createElement("span");

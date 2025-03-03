@@ -6,6 +6,10 @@
 @import url('./pages/Login/Login.css');
 @import url('./pages/Register/Register.css');
 
+@import url('./pages/Main/TopMenu/TopMenu.css');
+@import url('./pages/Main/ActionMenu/ActionMenu.css');
+@import url('./pages/Main/ProfileMenu/ProfileMenu.css');
+
 @import url('./pages/Attributes/Attributes.css');
 @import url('./pages/Attributes/Content/Content.css');
 @import url('./pages/Attributes/Item/Item.css');

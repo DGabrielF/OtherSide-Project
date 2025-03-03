@@ -1,0 +1,102 @@
+div#action-menu {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+div#action-menu #set-area {
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: fixed;
+  top: 57px;
+  right: 0;
+}
+
+div#action-menu  div[class$="-item"] {
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: relative;
+  cursor: pointer;
+}
+
+div#action-menu > div span {
+  display: none;
+}
+
+div#action-menu > div:hover span {
+  display: block;
+  position: relative;
+  right: 0;
+  top: 100%;
+}
+
+div#action-menu > div img {
+  width: 98%;
+  height: 98%;
+
+  border: 1px solid #000000aa;
+  box-shadow: 0 0 5px #000000;
+  border-radius: 50%;
+}
+
+div#action-menu > div[data-set-position="7"] {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+}
+
+div#action-menu > div[data-set-position="6"] {
+  position: fixed;
+  right: 0;
+  bottom: 75px;
+}
+
+div#action-menu > div[data-set-position="5"] {
+  position: fixed;
+  right: 45px;
+  bottom: 20px;
+
+  width: 75px;
+  height: 75px;
+}
+
+div#action-menu > div[data-set-position="4"] {
+  position: fixed;
+  right: 55px;
+  bottom: 110px;
+}
+
+div#action-menu > div[data-set-position="3"] {
+  position: fixed;
+  right: 110px;
+  bottom: 95px;
+}
+
+div#action-menu > div[data-set-position="2"] {
+  position: fixed;
+  right: 135px;
+  bottom: 45px;
+}
+
+div#action-menu > div[data-set-position="1"] {
+  position: fixed;
+  right: 185px;
+  bottom: 20px;
+}
+
+div#action-menu > div[data-set-position="0"] {
+  position: fixed;
+  right: 235px;
+  bottom: 20px;
+}

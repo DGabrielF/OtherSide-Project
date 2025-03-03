@@ -8,17 +8,6 @@ Fade.create = () => {
   Fade.self.style.zIndex = 1;
   Fade.self.classList.add("hide")
   Fade.self.addEventListener("click", () => Fade.close());
-  Fade.self.style = `
-  `
-  Object.assign(Fade.self.style, {
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "#00000022",
-    position: "relative",
-    top: "0",
-    right: "0",
-    zIndex: "1",
-  })
 
   return Fade.self;
 };
